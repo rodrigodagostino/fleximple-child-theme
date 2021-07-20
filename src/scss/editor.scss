@@ -1,0 +1,54 @@
+/*-----------------------------------------------------------------
+
+Stylesheet: Editor Stylesheet
+
+Here's where the magic happens. Here is where you import
+all of your Sass files so they can compile into one
+CSS file.
+
+ ----------------------------------------------------------------*/
+
+/* Mixins */
+@import '../../../fleximple-theme/src/scss/mixins/mixins';
+
+/* Variables */
+@import 'variables/color';
+@import 'variables/spacing';
+@import 'variables/typography';
+@import 'variables/configuration';
+
+.wp-block {
+	max-width: var(--site-primary-content__max-width);
+}
+
+.edit-post-visual-editor .editor-styles-wrapper {
+	background-color: var(--body__background-color);
+
+	& > * {
+		font-family: var(--body__font-family);
+		font-size: var(--body__font-size);
+		line-height: var(--body__line-height);
+		color: var(--text__color);
+	}
+
+	.editor-post-title__block .editor-post-title__input {
+		font-family: var(--heading__font-family);
+		color: var(--heading__color);
+	}
+
+	/* Base */
+	@import '../../../fleximple-theme/src/scss/base/typography';
+	@import '../../../fleximple-theme/src/scss/base/elements';
+	@import '../../../fleximple-theme/src/scss/base/alignment';
+
+	/* Layout */
+	@import '../../../fleximple-theme/src/scss/layout/navigation';
+
+	/* Components */
+	@import '../../../fleximple-theme/src/scss/components/blocks';
+	@import '../../../fleximple-theme/src/scss/components/media';
+	@import '../../../fleximple-theme/src/scss/components/widgets';
+
+	/* Templates */
+	// @import '../../../fleximple-theme/src/scss/templates/home';
+}

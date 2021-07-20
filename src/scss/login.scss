@@ -1,0 +1,84 @@
+/*-----------------------------------------------------------------
+
+ # Stylesheet: Login Stylesheet
+
+   This stylesheet is loaded is only on the login page. This way you can style
+   the login page. It won't affect any other page, admin or front-end.
+
+   Make sure functions/login.php is activated in your functions.php file.
+
+   This stylesheet is turned off by default.
+
+   For more info, check out the codex:
+   http://codex.wordpress.org/Creating_Admin_Themes
+
+ ----------------------------------------------------------------*/
+
+/* Mixins */
+@import '../../../fleximple-theme/src/scss/mixins/mixins';
+
+/* Variables */
+@import 'variables/color';
+@import 'variables/spacing';
+@import 'variables/typography';
+@import 'variables/configuration';
+
+/* Base */
+@import '../../../fleximple-theme/src/scss/base/base';
+@import '../../../fleximple-theme/src/scss/base/typography';
+@import '../../../fleximple-theme/src/scss/base/elements';
+@import '../../../fleximple-theme/src/scss/base/alignment';
+
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../assets/images/login-background.jpg);
+	background-size: cover;
+
+	#login {
+		padding: 0;
+
+		h1 a {
+			background: url(../assets/images/logo-default.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 80%;
+			height: 80px;
+			text-indent: -9999px;
+			overflow: hidden;
+			padding-bottom: 0;
+			display: block;
+		}
+
+		#loginform {
+			padding: var(--space-150);
+			border: none;
+			border-radius: var(--space-025);
+			@include box-shadow(2);
+
+			/* Components */
+			@import '../../../fleximple-theme/src/scss/components/forms';
+
+			.user-pass-wrap {
+				margin-bottom: var(--space-100);
+			}
+
+			#rememberme {
+				min-width: unset;
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				&::before {
+					content: none;
+				}
+			}
+		}
+
+		#nav,
+		#backtoblog {
+			text-align: center;
+		}
+	}
+}

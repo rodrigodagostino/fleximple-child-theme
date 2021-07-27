@@ -3,18 +3,6 @@
  * Register Google Fonts
  */
 function fleximplechildtheme_fonts_url() {
-	// $font_families = array();
-	// $font_families[] = 'Bitter:400,400i,700,700i';
-	// $font_families[] = 'Open+Sans:400,400i,700,700i';
-
-	// $query_args = array(
-	//     'family' => implode( '|', $font_families ),
-	//     'subset' => 'latin,latin-ext',
-	// );
-
-	// $fonts_url = esc_url( add_query_arg( $query_args, 'https://fonts.googleapis.com/css' ) );
-	// return $fonts_url;
-
 	$font_families = array();
 	$font_families[] = 'Bitter:ital,wght@0,400;0,700;1,400;1,700';
 	$font_families[] = 'Catamaran:ital,wght@0,400;0,600;1,400;1,600';

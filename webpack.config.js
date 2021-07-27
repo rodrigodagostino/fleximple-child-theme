@@ -1,16 +1,13 @@
-const defaultConfig = require( './node_modules/@wordpress/scripts/config/webpack.config.js' );
-const path = require( 'path' );
-const postcssPresetEnv = require( 'postcss-preset-env' );
-const postcssRem = require( 'postcss-rem' );
-const postcssColorMod = require( 'postcss-color-mod-function' );
-const postcssAtVariables = require( 'postcss-at-rules-variables' );
-const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
-const IgnoreEmitPlugin = require( 'ignore-emit-webpack-plugin' );
+const path = require( 'path' )
+const postcssPresetEnv = require( 'postcss-preset-env' )
+const postcssRem = require( 'postcss-rem' )
+const postcssColorMod = require( 'postcss-color-mod-function' )
+const postcssAtVariables = require( 'postcss-at-rules-variables' )
+const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' )
+const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' )
+const IgnoreEmitPlugin = require( 'ignore-emit-webpack-plugin' )
 
-const isProduction = process.env.NODE_ENV === 'production';
-
-module.exports = {
-	...defaultConfig,
+const config = {
 	entry: {
 		// 'admin-script': path.resolve( process.cwd(), 'src/js', 'admin.js' ),
 		// script: path.resolve( process.cwd(), 'src/js', 'script.js' ),
@@ -23,7 +20,6 @@ module.exports = {
 		path: path.resolve( process.cwd(), 'dist' ),
 	},
 	optimization: {
-		// ...defaultConfig.optimization,
 		splitChunks: {
 			cacheGroups: {
 				'editor-style': {
@@ -49,9 +45,23 @@ module.exports = {
 		},
 	},
 	module: {
-		...defaultConfig.module,
 		rules: [
-			// ...defaultConfig.module.rules,
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: [
+					require.resolve( 'thread-loader' ),
+					{
+						loader: require.resolve( 'babel-loader' ),
+						options: {
+							// Babel uses a directory within local node_modules
+							// by default. Use the environment variable option
+							// to enable more persistent caching.
+							cacheDirectory: process.env.BABEL_CACHE_DIRECTORY || true,
+						},
+					},
+				],
+			},
 			{
 				test: /\.(sc|sa|c)ss$/,
 				exclude: /node_modules/,
@@ -62,7 +72,6 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
-							sourceMap: ! isProduction,
 							url: false,
 						},
 					},
@@ -87,9 +96,9 @@ module.exports = {
 										},
 									} ),
 									postcssRem( {
-									/* baseline: 10, // Default to 16 */
-									/* convert: 'px', // Default to rem */
-										fallback: true,
+										/* baseline: 10, // Default to 16 */
+										/* convert: 'px', // Default to rem */
+										// fallback: true,
 										precision: 6, // Default to 5
 									} ),
 									postcssColorMod(),
@@ -102,19 +111,24 @@ module.exports = {
 					},
 					{
 						loader: 'sass-loader',
-						options: {
-							sourceMap: ! isProduction,
-						},
 					},
 				],
 			},
 		],
 	},
 	plugins: [
-		...defaultConfig.plugins,
+		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin( {
 			filename: '[name].css',
 		} ),
 		new IgnoreEmitPlugin( [ 'style.js' ] ),
 	],
-};
+}
+
+module.exports = ( env, argv ) => {
+	config.mode = argv.mode
+	if ( argv.mode === 'development' ) {
+		config.devtool = 'source-map'
+	}
+	return config
+}

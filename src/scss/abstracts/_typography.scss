@@ -1,16 +1,16 @@
 /*-----------------------------------------------
 
- Stylesheet: Typography Variables Stylesheet
+ # Stylesheet: Typography Variables Stylesheet
 
  ----------------------------------------------*/
 
 :root {
 	/* Font families */
-	--font-primary: "Bitter", var(--font-sans-serif-fallback);
+	--font-primary: "Bitter", var(--font-serif-fallback);
 	--font-secondary: "Catamaran", var(--font-sans-serif-fallback);
 	--font-sans-serif-fallback: "Helvetica Neue", sans-serif;
 	--font-serif-fallback: "Georgia", serif;
-	--font-icon: FontAwesome, var(--font-fallback);
+	--font-icon: "FontAwesome", var(--font-fallback);
 
 	/* Set base values */
 	--text-base: rem(16px);
@@ -23,5 +23,7 @@
 	--text-150: calc(var(--text-base) * 1.5);
 	--text-175: calc(var(--text-base) * 1.75);
 	--text-200: calc(var(--text-base) * 2);
-	--text-250: calc(var(--text-base) * 4);
+	--text-250: calc(var(--text-base) * 2.5);
+	--text-300: calc(var(--text-base) * 3);
+	--text-400: calc(var(--text-base) * 4);
 }

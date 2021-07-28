@@ -1,0 +1,116 @@
+/*-----------------------------------------------
+
+ # Stylesheet: Color Variables Stylesheet
+
+ ----------------------------------------------*/
+
+:root {
+	/* Primary colors */
+	--color-primary: var(--rf-red-500);
+	--color-primary--lightest: var(--rf-red-200);
+	--color-primary--lighter: var(--rf-red-300);
+	--color-primary--light: var(--rf-red-400);
+	--color-primary--dark: var(--rf-red-600);
+	--color-primary--darker: var(--rf-red-700);
+	--color-primary--darkest: var(--rf-red-800);
+
+	/* Accent colors */
+	--color-accent: var(--rf-orange-500);
+	--color-accent--lightest: var(--rf-orange-200);
+	--color-accent--lighter: var(--rf-orange-300);
+	--color-accent--light: var(--rf-orange-400);
+	--color-accent--dark: var(--rf-orange-600);
+	--color-accent--darker: var(--rf-orange-700);
+	--color-accent--darkest: var(--rf-orange-800);
+
+	/* Feedback */
+	--color-success: var(--color-green);
+	--color-error: var(--color-orange);
+	--color-warning: var(--color-yellow);
+
+	/* Brand palette */
+	--rf-red-050: color-mod(var(--rf-red-500) tint(88%));
+	--rf-red-100: color-mod(var(--rf-red-500) tint(80%));
+	--rf-red-150: color-mod(var(--rf-red-500) tint(70%));
+	--rf-red-200: color-mod(var(--rf-red-500) tint(60%));
+	--rf-red-300: color-mod(var(--rf-red-500) tint(40%));
+	--rf-red-350: color-mod(var(--rf-red-500) tint(30%));
+	--rf-red-400: color-mod(var(--rf-red-500) tint(20%));
+	--rf-red-450: color-mod(var(--rf-red-500) tint(10%));
+	--rf-red-500: #dc3232;
+	--rf-red-550: color-mod(var(--rf-red-500) shade(10%));
+	--rf-red-600: color-mod(var(--rf-red-500) shade(20%));
+	--rf-red-650: color-mod(var(--rf-red-500) shade(30%));
+	--rf-red-700: color-mod(var(--rf-red-500) shade(40%));
+	--rf-red-750: color-mod(var(--rf-red-500) shade(50%));
+	--rf-red-800: color-mod(var(--rf-red-500) shade(60%));
+	--rf-red-850: color-mod(var(--rf-red-500) shade(70%));
+	--rf-red-900: color-mod(var(--rf-red-500) shade(80%));
+	--rf-red-950: color-mod(var(--rf-red-500) shade(90%));
+
+	--rf-orange-050: color-mod(var(--rf-orange-500) tint(88%));
+	--rf-orange-100: color-mod(var(--rf-orange-500) tint(80%));
+	--rf-orange-150: color-mod(var(--rf-orange-500) tint(70%));
+	--rf-orange-200: color-mod(var(--rf-orange-500) tint(60%));
+	--rf-orange-300: color-mod(var(--rf-orange-500) tint(40%));
+	--rf-orange-350: color-mod(var(--rf-orange-500) tint(30%));
+	--rf-orange-400: color-mod(var(--rf-orange-500) tint(20%));
+	--rf-orange-450: color-mod(var(--rf-orange-500) tint(10%));
+	--rf-orange-500: #ff8c14;
+	--rf-orange-550: color-mod(var(--rf-orange-500) shade(10%));
+	--rf-orange-600: color-mod(var(--rf-orange-500) shade(20%));
+	--rf-orange-650: color-mod(var(--rf-orange-500) shade(30%));
+	--rf-orange-700: color-mod(var(--rf-orange-500) shade(40%));
+	--rf-orange-750: color-mod(var(--rf-orange-500) shade(50%));
+	--rf-orange-800: color-mod(var(--rf-orange-500) shade(60%));
+	--rf-orange-850: color-mod(var(--rf-orange-500) shade(70%));
+	--rf-orange-900: color-mod(var(--rf-orange-500) shade(80%));
+	--rf-orange-950: color-mod(var(--rf-orange-500) shade(90%));
+
+	/* Gray palette */
+	--gray-base: #686a84;
+
+	--white-rich: #fff;
+	--white: color-mod(var(--gray-base) tint(92%));
+
+	--gray-050: color-mod(var(--gray-base) tint(88%));
+	--gray-100: color-mod(var(--gray-base) tint(80%));
+	--gray-150: color-mod(var(--gray-base) tint(70%));
+	--gray-200: color-mod(var(--gray-base) tint(60%));
+	--gray-300: color-mod(var(--gray-base) tint(40%));
+	--gray-400: color-mod(var(--gray-base) tint(20%));
+	--gray-500: var(--gray-base);
+	--gray-550: color-mod(var(--gray-base) shade(7.5%));
+	--gray-600: color-mod(var(--gray-base) shade(15%));
+	--gray-650: color-mod(var(--gray-base) shade(22.5%));
+	--gray-700: color-mod(var(--gray-base) shade(30%));
+	--gray-750: color-mod(var(--gray-base) shade(37.5%));
+	--gray-800: color-mod(var(--gray-base) shade(45%));
+	--gray-850: color-mod(var(--gray-base) shade(52.5%));
+	--gray-900: color-mod(var(--gray-base) shade(60%));
+	--gray-950: color-mod(var(--gray-base) shade(67.5%));
+
+	--black: color-mod(var(--gray-base) shade(80%));
+	--black-rich: #000;
+
+	/* General color palette */
+	--color-red: #ef4444;
+	--color-orange: #f97316;
+	--color-amber: #f59e0b;
+	--color-yellow: #eab308;
+	--color-olive: #b5cc18;
+	--color-lime: #84cc16;
+	--color-green: #22c55e;
+	--color-emerald: #10b981;
+	--color-teal: #14b8a6;
+	--color-cyan: #06b6d4;
+	--color-light-blue: #3399ff;
+	--color-blue: #0080ff;
+	--color-indigo: #6366f1;
+	--color-violet: #8b5cf6;
+	--color-purple: #a855f7;
+	--color-fuchsia: #d946ef;
+	--color-pink: #ec4899;
+	--color-rose: #f43f5e;
+	--color-brown: #a5673f;
+}

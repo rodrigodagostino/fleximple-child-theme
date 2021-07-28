@@ -15,32 +15,31 @@
  ----------------------------------------------------------------*/
 
 /* Mixins */
-@import '../../../fleximple-theme/src/scss/mixins/mixins';
+@import "../../../fleximple-theme/src/scss/mixins/mixins";
 
-/* Variables */
-@import 'variables/color';
-@import 'variables/spacing';
-@import 'variables/typography';
-@import 'variables/configuration';
+/* Abstracts */
+@import "abstracts/color";
+@import "abstracts/spacing";
+@import "abstracts/typography";
+@import "abstracts/configuration";
 
 /* Base */
-@import '../../../fleximple-theme/src/scss/base/base';
-@import '../../../fleximple-theme/src/scss/base/typography';
-@import '../../../fleximple-theme/src/scss/base/elements';
-@import '../../../fleximple-theme/src/scss/base/alignment';
+@import "../../../fleximple-theme/src/scss/base/base";
+@import "../../../fleximple-theme/src/scss/base/typography";
+@import "../../../fleximple-theme/src/scss/base/elements";
+@import "../../../fleximple-theme/src/scss/base/alignment";
 
 .login {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../assets/images/login-background.jpg);
-	background-size: cover;
+	background-color: var(--gray-050);
 
 	#login {
 		padding: 0;
 
 		h1 a {
-			background: url(../assets/images/logo-default.png);
+			background: url(../assets/images/logo-inline.svg);
 			background-repeat: no-repeat;
 			background-size: contain;
 			width: 80%;
@@ -58,7 +57,7 @@
 			@include box-shadow(2);
 
 			/* Components */
-			@import '../../../fleximple-theme/src/scss/components/forms';
+			@import "../../../fleximple-theme/src/scss/components/forms";
 
 			.user-pass-wrap {
 				margin-bottom: var(--space-100);

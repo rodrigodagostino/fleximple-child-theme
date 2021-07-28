@@ -1,54 +1,96 @@
 /*-----------------------------------------------------------------
 
-Stylesheet: Editor Stylesheet
+ # Stylesheet: Editor Stylesheet
 
-Here's where the magic happens. Here is where you import
-all of your Sass files so they can compile into one
-CSS file.
+   Here's where the magic happens. Here is where you import
+   all of your Sass files so they can compile into one
+   CSS file.
 
  ----------------------------------------------------------------*/
 
 /* Mixins */
-@import '../../../fleximple-theme/src/scss/mixins/mixins';
+@import "../../../fleximple-theme/src/scss/mixins/mixins";
 
-/* Variables */
-@import 'variables/color';
-@import 'variables/spacing';
-@import 'variables/typography';
-@import 'variables/configuration';
+/* Abstracts */
+@import "abstracts/color";
+@import "abstracts/spacing";
+@import "abstracts/typography";
+@import "abstracts/configuration";
 
-.wp-block {
-	max-width: var(--site-primary-content__max-width);
+.edit-post-layout {
+	.wp-block,
+	.components-placeholder {
+		max-width: var(--site-main__width);
+
+		&[data-align="wide"] {
+			max-width: calc(var(--site-main__width) * 1.2);
+		}
+
+		&[data-align="full"] {
+			max-width: none;
+		}
+	}
+
+	.components-placeholder {
+		max-width: var(--site-main__width);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+body.post-type-post {
+	.edit-post-layout .wp-block {
+		max-width: rem(680px);
+	}
 }
 
 .edit-post-visual-editor .editor-styles-wrapper {
+	font-family: var(--body__font-family);
+	font-size: $single__entry-content__font-size;
+	line-height: var(--body__line-height);
+	color: var(--text__color);
 	background-color: var(--body__background-color);
-
-	& > * {
-		font-family: var(--body__font-family);
-		font-size: var(--body__font-size);
-		line-height: var(--body__line-height);
-		color: var(--text__color);
-	}
 
 	.editor-post-title__block .editor-post-title__input {
 		font-family: var(--heading__font-family);
-		color: var(--heading__color);
+		font-size: $single__entry-title__font-size;
+		font-weight: $single__entry-title__font-weight;
+		color: $single__entry-title__color;
+		line-height: $single__entry-title__line-height;
 	}
 
 	/* Base */
-	@import '../../../fleximple-theme/src/scss/base/typography';
-	@import '../../../fleximple-theme/src/scss/base/elements';
-	@import '../../../fleximple-theme/src/scss/base/alignment';
+	@import "../../../fleximple-theme/src/scss/base/typography";
+	@import "../../../fleximple-theme/src/scss/base/elements";
+	@import "../../../fleximple-theme/src/scss/base/alignment";
 
 	/* Layout */
-	@import '../../../fleximple-theme/src/scss/layout/navigation';
+	@import "../../../fleximple-theme/src/scss/layout/navigation";
+
+	p.wp-block a,
+	ul.wp-block a,
+	blockquote.wp-block a {
+		border-bottom: 2px solid var(--gray-150);
+
+		&:hover,
+		&:active {
+			border-bottom-color: $link__color--hover;
+		}
+	}
 
 	/* Components */
-	@import '../../../fleximple-theme/src/scss/components/blocks';
-	@import '../../../fleximple-theme/src/scss/components/media';
-	@import '../../../fleximple-theme/src/scss/components/widgets';
+	@import "../../../fleximple-theme/src/scss/components/media";
+	@import "../../../fleximple-theme/src/scss/components/media";
+	@import "../../../fleximple-theme/src/scss/components/widgets";
 
 	/* Templates */
 	// @import '../../../fleximple-theme/src/scss/templates/home';
+}
+
+@media only screen and (min-width: var(--bp-medium)) {
+	.edit-post-visual-editor .editor-styles-wrapper {
+		.editor-post-title__block .editor-post-title__input {
+			font-size: $single__entry-title__font-size--medium;
+		}
+	}
 }

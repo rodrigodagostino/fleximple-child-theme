@@ -9,42 +9,48 @@
  ----------------------------------------------------------------*/
 
 /* Modules */
-@import '../../../fleximple-theme/src/scss/modules/normalize';
-@import '../../../fleximple-theme/src/scss/modules/reset';
-@import '../../../fleximple-theme/src/scss/modules/accesibility';
+@import "../../../fleximple-theme/src/scss/modules/normalize";
+@import "../../../fleximple-theme/src/scss/modules/reset";
+@import "../../../fleximple-theme/src/scss/modules/accesibility";
+@import "../../../fleximple-theme/src/scss/modules/utilities";
+@import "../../../fleximple-theme/src/scss/modules/wordpress";
 
 /* Mixins */
-@import '../../../fleximple-theme/src/scss/mixins/mixins';
+@import "../../../fleximple-theme/src/scss/mixins/mixins";
 
-/* Variables */
-@import 'variables/color';
-@import 'variables/spacing';
-@import 'variables/typography';
-@import 'variables/configuration';
+/* Abstracts */
+@import "abstracts/color";
+@import "abstracts/spacing";
+@import "abstracts/typography";
+@import "abstracts/configuration";
 
 /* Base */
-@import '../../../fleximple-theme/src/scss/base/base';
-@import '../../../fleximple-theme/src/scss/base/typography';
-@import '../../../fleximple-theme/src/scss/base/elements';
-@import '../../../fleximple-theme/src/scss/base/alignment';
+@import "../../../fleximple-theme/src/scss/base/base";
+@import "../../../fleximple-theme/src/scss/base/typography";
+@import "../../../fleximple-theme/src/scss/base/elements";
+@import "../../../fleximple-theme/src/scss/base/alignment";
 
 /* Layout */
-@import '../../../fleximple-theme/src/scss/layout/site';
-@import '../../../fleximple-theme/src/scss/layout/header';
-@import '../../../fleximple-theme/src/scss/layout/navigation';
-@import '../../../fleximple-theme/src/scss/layout/footer';
-@import '../../../fleximple-theme/src/scss/layout/sidebar';
+@import "../../../fleximple-theme/src/scss/layout/site";
+@import "../../../fleximple-theme/src/scss/layout/header";
+@import "../../../fleximple-theme/src/scss/layout/navigation";
+@import "../../../fleximple-theme/src/scss/layout/footer";
+@import "../../../fleximple-theme/src/scss/layout/sidebar";
 
 /* Templates */
-@import '../../../fleximple-theme/src/scss/templates/home';
-@import '../../../fleximple-theme/src/scss/templates/archive';
-@import '../../../fleximple-theme/src/scss/templates/front-page';
-@import '../../../fleximple-theme/src/scss/templates/page';
-@import '../../../fleximple-theme/src/scss/templates/search';
-@import '../../../fleximple-theme/src/scss/templates/single';
+@import "../../../fleximple-theme/src/scss/templates/404";
+@import "../../../fleximple-theme/src/scss/templates/archive";
+@import "../../../fleximple-theme/src/scss/templates/front-page";
+@import "../../../fleximple-theme/src/scss/templates/home";
+@import "../../../fleximple-theme/src/scss/templates/page";
+@import "../../../fleximple-theme/src/scss/templates/search";
+@import "../../../fleximple-theme/src/scss/templates/single";
 
 /* Components */
-@import '../../../fleximple-theme/src/scss/components/blocks';
-@import '../../../fleximple-theme/src/scss/components/forms';
-@import '../../../fleximple-theme/src/scss/components/media';
-@import '../../../fleximple-theme/src/scss/components/widgets';
+@import "../../../fleximple-theme/src/scss/components/blocks";
+@import "../../../fleximple-theme/src/scss/components/forms";
+@import "../../../fleximple-theme/src/scss/components/media";
+@import "../../../fleximple-theme/src/scss/components/widgets";
+
+/* Customization */
+@import "modules/customization";

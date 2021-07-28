@@ -1,6 +1,6 @@
 /*-----------------------------------------------
 
- Stylesheet: Spacing Variables Stylesheet
+ # Stylesheet: Spacing Variables Stylesheet
 
  ----------------------------------------------*/
 
@@ -10,8 +10,11 @@
 
 	--space-025: calc(var(--space-unit) * 0.25);
 	--space-050: calc(var(--space-unit) * 0.5);
+	--space-075: calc(var(--space-unit) * 0.75);
 	--space-100: var(--space-unit);
+	--space-125: calc(var(--space-unit) * 1.25);
 	--space-150: calc(var(--space-unit) * 1.5);
+	--space-175: calc(var(--space-unit) * 1.75);
 	--space-200: calc(var(--space-unit) * 2);
 	--space-250: calc(var(--space-unit) * 2.5);
 	--space-300: calc(var(--space-unit) * 3);

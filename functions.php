@@ -87,39 +87,89 @@ if ( ! function_exists( 'fleximplechildtheme_setup' ) ) :
 		// Add support for custom color scheme.
 		add_theme_support( 'editor-color-palette', array(
 			array(
-				'name'  => __( 'Dark Blue', 'fleximplechildthemetheme' ),
-				'slug'  => 'blue-dark',
-				'color' => '#0073aa',
+				'name'  => __( 'Lighter Primary', 'fleximpletheme' ),
+				'slug'  => 'primary-lighter',
+				'color' => '#4da6ff',
 			),
 			array(
-				'name'  => __( 'Light Blue', 'fleximplechildthemetheme' ),
-				'slug'  => 'blue-light',
-				'color' => '#229fd8',
+				'name'  => __( 'Light Primary', 'fleximpletheme' ),
+				'slug'  => 'primary-light',
+				'color' => '#2693ff',
 			),
 			array(
-				'name'  => __( 'Lighter Gray', 'fleximplechildthemetheme' ),
+				'name'  => __( 'Primary', 'fleximpletheme' ),
+				'slug'  => 'primary',
+				'color' => '#0080ff',
+			),
+			array(
+				'name'  => __( 'Dark Primary', 'fleximpletheme' ),
+				'slug'  => 'primary-dark',
+				'color' => '#006dd9',
+			),
+			array(
+				'name'  => __( 'Darker Primary', 'fleximpletheme' ),
+				'slug'  => 'primary-darker',
+				'color' => '#005ab3',
+			),
+			array(
+				'name'  => __( 'Lighter Accent', 'fleximpletheme' ),
+				'slug'  => 'accent-lighter',
+				'color' => '#ff694d',
+			),
+			array(
+				'name'  => __( 'Light Accent', 'fleximpletheme' ),
+				'slug'  => 'accent-light',
+				'color' => '#ff4826',
+			),
+			array(
+				'name'  => __( 'Accent', 'fleximpletheme' ),
+				'slug'  => 'accent',
+				'color' => '#ff2800',
+			),
+			array(
+				'name'  => __( 'Dark Accent', 'fleximpletheme' ),
+				'slug'  => 'accent-dark',
+				'color' => '#d92200',
+			),
+			array(
+				'name'  => __( 'Darker Accent', 'fleximpletheme' ),
+				'slug'  => 'accent-darker',
+				'color' => '#b31c00',
+			),
+			array(
+				'name'  => __( 'Lighter Gray', 'fleximpletheme' ),
 				'slug'  => 'gray-lighter',
-				'color' => '#c3c3ce',
+				'color' => '#e1e1e6',
 			),
 			array(
-				'name'  => __( 'Light Gray', 'fleximplechildthemetheme' ),
+				'name'  => __( 'Light Gray', 'fleximpletheme' ),
 				'slug'  => 'gray-light',
-				'color' => '#86889d',
+				'color' => '#a4a6b5',
 			),
 			array(
-				'name'  => __( 'Gray', 'fleximplechildthemetheme' ),
+				'name'  => __( 'Gray', 'fleximpletheme' ),
 				'slug'  => 'gray',
 				'color' => '#686a84',
 			),
 			array(
-				'name'  => __( 'Dark Gray', 'fleximplechildthemetheme' ),
+				'name'  => __( 'Dark Gray', 'fleximpletheme' ),
 				'slug'  => 'gray-dark',
-				'color' => '#53556a',
+				'color' => '#494a5c',
 			),
 			array(
-				'name'  => __( 'Darker Gray', 'fleximplechildthemetheme' ),
+				'name'  => __( 'Darker Gray', 'fleximpletheme' ),
 				'slug'  => 'gray-darker',
 				'color' => '#2a2a35',
+			),
+			array(
+				'name'  => __( 'White', 'fleximpletheme' ),
+				'slug'  => 'white',
+				'color' => '#f3f3f5',
+			),
+			array(
+				'name'  => __( 'Black', 'fleximpletheme' ),
+				'slug'  => 'black',
+				'color' => '#15151a',
 			),
 		) );
 

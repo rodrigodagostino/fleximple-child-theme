@@ -3,21 +3,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Fleximple Child Theme 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/fleximple-theme\n"
-"POT-Creation-Date: 2020-04-08T01:54:18+02:00\n"
-"PO-Revision-Date: 2021-01-26 17:20-0300\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/fleximple-child-"
+"theme\n"
+"POT-Creation-Date: 2021-07-28T23:07:59+02:00\n"
+"PO-Revision-Date: 2021-07-28 18:08-0300\n"
 "Last-Translator: Rodrigo D’Agostino <rodrigo.dagostino@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "X-Domain: fleximplechildtheme\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Theme Name of the theme
-msgid "Fleximple Child Theme"
+msgid "Fleximple Theme"
 msgstr ""
 
 #. Theme URI of the theme
@@ -36,17 +37,19 @@ msgstr ""
 msgid "https://www.rodrigodagostino.com"
 msgstr ""
 
-#: 404.php:17
-msgid "Oops! That page can’t be found."
-msgstr "¡Ups! No se ha podido encontrar esa página."
+#: 404.php:19
+msgid "Oops! The page you were looking for doesn’t exist."
+msgstr "¡Ups! La página que estabas buscando no existe."
 
-#: 404.php:21
+#: 404.php:25
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
+"You may have followed an outdated link or an incorrect URL, but you can use "
+"the search or <a href=\"%s\">go to the front page</a> to try and find what "
+"you’re looking for."
 msgstr ""
-"Parece que no se ha encontrado nada aquí. ¿Por qué no pruebas con alguno de "
-"los enlaces debajo o la barra de búsqueda?"
+"Es posible que hayas seguido un enlace obsoleto o una URL incorrecta, pero "
+"podés usar la búsqueda o <a href=\"%s\">ir a la portada</a> para intentar "
+"encontrar lo que estás buscando."
 
 #. translators: 1: title.
 #: comments.php:33
@@ -65,94 +68,184 @@ msgstr[1] "%1$s comentarios en &ldquo;%2$s&rdquo;"
 msgid "Comments are closed."
 msgstr "Los comentarios están cerrados."
 
-#: footer.php:20 functions/sidebar.php:26
-msgid "Footer"
-msgstr "Pie de página"
+#: footer.php:42
+msgid "Footer Widget Area 1"
+msgstr "Área de widgets 1 del pié de página"
 
-#: functions/customizer.php:30
+#: footer.php:51
+msgid "Footer Widget Area 2"
+msgstr "Área de widgets 2 del pié de página"
+
+#: functions.php:93 functions.php:90
+msgid "Lighter Primary"
+msgstr "Primario más claro"
+
+#: functions.php:98 functions.php:95
+msgid "Light Primary"
+msgstr "Primario claro"
+
+#: functions.php:103 functions.php:100
+msgid "Primary"
+msgstr "Primario"
+
+#: functions.php:108 functions.php:105
+msgid "Dark Primary"
+msgstr "Primario oscuro"
+
+#: functions.php:113 functions.php:110
+msgid "Darker Primary"
+msgstr "Primario más oscuro"
+
+#: functions.php:118 functions.php:115
+msgid "Lighter Accent"
+msgstr "Énfasis más claro"
+
+#: functions.php:123 functions.php:120
+msgid "Light Accent"
+msgstr "Énfasis claro"
+
+#: functions.php:128 functions.php:125
+msgid "Accent"
+msgstr "Énfasis"
+
+#: functions.php:133 functions.php:130
+msgid "Dark Accent"
+msgstr "Énfasis oscuro"
+
+#: functions.php:138 functions.php:135
+msgid "Darker Accent"
+msgstr "Énfasis más oscuro"
+
+#: functions.php:143 functions.php:140
+msgid "Lighter Gray"
+msgstr "Gris más claro"
+
+#: functions.php:148 functions.php:145
+msgid "Light Gray"
+msgstr "Gris claro"
+
+#: functions.php:153 functions.php:150
+msgid "Gray"
+msgstr "Gris"
+
+#: functions.php:158 functions.php:155
+msgid "Dark Gray"
+msgstr "Gris oscuro"
+
+#: functions.php:163 functions.php:160
+msgid "Darker Gray"
+msgstr "Gris más oscuro"
+
+#: functions.php:168 functions.php:165
+msgid "White"
+msgstr "Blanco"
+
+#: functions.php:173 functions.php:170
+msgid "Black"
+msgstr "Negro"
+
+#: functions/customizer.php:29
 msgid "Layout"
 msgstr "Estructura"
 
-#: functions/customizer.php:41
+#: functions/customizer.php:39
 msgid "Header Layout"
 msgstr "Diseño del encabezado"
 
-#: functions/customizer.php:47
+#: functions/customizer.php:45
 msgid "Default"
 msgstr "Por defecto"
 
-#: functions/customizer.php:48
+#: functions/customizer.php:46
 msgid "Slim"
 msgstr "Delgado"
 
-#: functions/customizer.php:49
+#: functions/customizer.php:47
 msgid "Centered"
 msgstr "Centrado"
 
-#: functions/customizer.php:50
+#: functions/customizer.php:48
 msgid "Full-Width"
 msgstr "Ancho completo"
 
-#: functions/customizer.php:61
+#: functions/customizer.php:49
+msgid "Custom"
+msgstr "Personalizado"
+
+#: functions/customizer.php:60
 msgid "Header Behavior"
 msgstr "Comportamiento del encabezado"
 
-#: functions/customizer.php:67
+#: functions/customizer.php:66
 msgid "Static"
 msgstr "Estático"
 
-#: functions/customizer.php:68
+#: functions/customizer.php:67
 msgid "Sticky"
 msgstr "Pegadizo"
 
-#: functions/customizer.php:80
+#: functions/customizer.php:78
+msgid "Header Position"
+msgstr "Posición del encabezado"
+
+#: functions/customizer.php:84
+msgid "Top of the page"
+msgstr "Inicio de la página"
+
+#: functions/customizer.php:85
+msgid "Below the fold"
+msgstr "Debajo del pliegue"
+
+#: functions/customizer.php:96
+msgid "Collapsible Menu Position"
+msgstr "Posición del Menú Colapsable"
+
+#: functions/customizer.php:102
+msgid "Absolute"
+msgstr "Absoluta"
+
+#: functions/customizer.php:103
+msgid "Fixed"
+msgstr "Fija"
+
+#: functions/customizer.php:114
 msgid "Display Header Search Field"
 msgstr "Mostrar barra de búsqueda en el encabezado"
 
-#: functions/customizer.php:94
+#: functions/customizer.php:128
 msgid "Sidebar Layout"
 msgstr "Diseño de la barra lateral"
 
-#: functions/customizer.php:100
+#: functions/customizer.php:134
 msgid "No Sidebar"
 msgstr "Sin barra lateral"
 
-#: functions/customizer.php:101
+#: functions/customizer.php:135
 msgid "Left Sidebar"
 msgstr "Barra lateral izquierda"
 
-#: functions/customizer.php:102
+#: functions/customizer.php:136
 msgid "Right Sidebar"
 msgstr "Barra lateral derecha"
 
-#: functions/enqueue-scripts.php:12
-msgctxt "Noto Serif font: on or off"
-msgid "on"
-msgstr ""
-
 #: functions/menu.php:5
-msgid "Primary Navigation"
-msgstr "Navegación primaria"
+msgid "Main Menu Location"
+msgstr "Ubicación del Menú Principal"
 
 #: functions/menu.php:6
-msgid "Footer Navigation"
-msgstr "Navegación del pie"
+msgid "Top Menu Location"
+msgstr "Ubicación del Menú Superior"
 
-#: functions/menu.php:68
+#: functions/menu.php:90
 msgctxt "toggle button"
-msgid "Display Submenu"
+msgid "Display submenu"
 msgstr "Mostrar submenú"
 
-#: functions/menu.php:69
-msgctxt "toggle button"
-msgid "Hide Submenu"
-msgstr "Ocultar submenú"
-
-#: functions/page-navi.php:15
+#: functions/page-navi.php:14
 msgid "&laquo;"
 msgstr ""
 
-#: functions/page-navi.php:16
+#: functions/page-navi.php:15
 msgid "&raquo;"
 msgstr ""
 
@@ -161,126 +254,125 @@ msgid "Sidebar"
 msgstr "Barra Lateral"
 
 #: functions/sidebar.php:7
-msgid "The first (primary) sidebar."
-msgstr "Barra lateral primaria."
+msgid "The primary sidebar."
+msgstr "La barra lateral primaria."
 
 #: functions/sidebar.php:16
-msgid "Off-Canvas"
-msgstr "Fuera del Lienzo"
+msgid "Footer Area 1"
+msgstr "Área de pie de página 1"
 
 #: functions/sidebar.php:17
-msgid "The off-canvas sidebar."
-msgstr "Barra lateral fuera del lienzo."
+msgid "The first footer sidebar area."
+msgstr "La primera área lateral del pie de página."
+
+#: functions/sidebar.php:26
+msgid "Footer Area 2"
+msgstr "Área de pie de página 2"
 
 #: functions/sidebar.php:27
-msgid "The footer sidebar."
-msgstr "Barra lateral del pie de página."
-
-#. translators: %s: post date.
-#: functions/template-tags.php:60
-msgctxt "post date"
-msgid "Posted on "
-msgstr "Publicado el "
+msgid "The second footer sidebar area."
+msgstr "La segunda área lateral del pie de página."
 
 #. translators: %s: post author.
-#: functions/template-tags.php:65
+#: functions/template-tags.php:66
 msgctxt "post author"
-msgid "By "
-msgstr "Por "
+msgid "Published by "
+msgstr "Publicado por "
 
-#: functions/template-tags.php:91
+#. translators: %s: post date.
+#: functions/template-tags.php:71
+msgctxt "post date"
+msgid "Published on "
+msgstr "Publicado el "
+
+#: functions/template-tags.php:97
 msgid "Posted in"
 msgstr "Publicado en"
 
-#: functions/template-tags.php:110
+#: functions/template-tags.php:117
+msgid "Share on Facebook"
+msgstr "Compartir en Facebook"
+
+#: functions/template-tags.php:122
+msgid "Share on Twitter"
+msgstr "Compartir en Twitter"
+
+#: functions/template-tags.php:127
+msgid "Share on LinkedIn"
+msgstr "Compartir en LinkedIn"
+
+#: functions/template-tags.php:132
+msgid "Share on WhatsApp"
+msgstr "Compartir en WhatsApp"
+
+#: functions/template-tags.php:137
+msgid "Share by e-mail"
+msgstr "Compartir por correo"
+
+#: functions/template-tags.php:157
 msgid "Tags"
 msgstr "Etiquetas"
 
-#. translators: %s: post title
-#: functions/template-tags.php:121
-msgid "Leave a Comment<span class=\"screen-reader-only\"> on %s</span>"
-msgstr "Deja un comentario<span class=\"screen-reader-only\"> en %s</span>"
-
-#: functions/template-tags.php:130
-msgid "1 Comment"
-msgstr "1 comentario"
-
-#: functions/template-tags.php:131
-msgid "% Comments"
-msgstr "% comentarios"
-
-#: functions/template-tags.php:133
-msgid "Comments are Closed"
-msgstr "Los comentarios están cerrados"
-
-#: functions.php:88
-msgid "Dark Blue"
-msgstr ""
-
-#: functions.php:93
-msgid "Light Blue"
-msgstr ""
-
-#: functions.php:98
-msgid "Lighter Gray"
-msgstr ""
-
-#: functions.php:103
-msgid "Light Gray"
-msgstr ""
-
-#: functions.php:108
-msgid "Gray"
-msgstr ""
-
-#: functions.php:113
-msgid "Dark Gray"
-msgstr ""
-
-#: functions.php:118
-msgid "Darker Gray"
-msgstr ""
-
-#: header.php:31
+#: header.php:32
 msgid "Skip to content"
 msgstr "Saltar al contenido"
+
+#: header.php:51
+msgid ""
+"You have chosen to use a custom header layout, but the <code>custom-"
+"navigation.php</code> file was not found. You can either select a different "
+"header layout or create a custom layout in <code>template-parts/custom-"
+"navigation.php</code>."
+msgstr ""
+"Ha elegido utilizar un diseño de encabezado personalizado, pero no se "
+"encontró el archivo <code>custom-navigation.php</code>. Puede seleccionar un "
+"diseño de encabezado diferente o crear un diseño personalizado en "
+"<code>template-parts/custom-navigation.php</code>."
 
 #. Template Name of the theme
 msgid "Front Page"
 msgstr "Portada"
 
+#: page.php:28 single.php:23
+msgid "Comments"
+msgstr "Comentarios"
+
 #. translators: %s: search query.
-#: search.php:20
-msgid "Search Results for: %s"
-msgstr "Resultados de búsqueda para: %s"
+#: search.php:22
+msgid "Results for %s"
+msgstr "Resultados para %s"
 
 #. translators: 1: title.
-#: search.php:29
+#: search.php:32
 msgid "%d result found"
 msgstr "%d resultado encontrado"
 
 #. translators: 1: comment count number
-#: search.php:35
+#: search.php:38
 msgctxt "results count title"
 msgid "%d result found"
 msgid_plural "%d results found"
 msgstr[0] "%d resultado encontrado"
 msgstr[1] "%d resultados encontrados"
 
-#: searchform.php:12 searchform.php:16
+#: searchform.php:11
 msgctxt "label"
 msgid "Search for:"
 msgstr "Buscar:"
 
-#: searchform.php:14
+#: searchform.php:12
 msgctxt "placeholder"
 msgid "Search…"
 msgstr "Buscar…"
 
-#: searchform.php:20 searchform.php:28
+#: searchform.php:15
 msgctxt "submit button"
 msgid "Search"
 msgstr "Buscar"
+
+#: searchform.php:18
+msgid "This field cannot be empty."
+msgstr "Este campo no puede estar vacío."
 
 #: template-parts/content-none.php:15
 msgid "Nothing Found"
@@ -310,34 +402,80 @@ msgstr ""
 "Parece que no hemos podido encontrar lo que estás buscando. Tal vez la "
 "búsqueda pueda ayudar."
 
-#: template-parts/content-page.php:25 template-parts/content.php:51
+#: template-parts/content-page.php:36 template-parts/content.php:56
 msgid "Pages:"
 msgstr "Páginas:"
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:40
-msgid "Continue reading<span class=\"screen-reader-only\"> \"%s\"</span>"
-msgstr "Sigue leyendo<span class=\"screen-reader-only\"> \"%s\"</span>"
+#: template-parts/content.php:45
+msgid "Continue reading<span class=\"sr-only\"> \"%s\"</span>"
+msgstr "Sigue leyendo<span class=\"sr-only\"> \"%s\"</span>"
 
-#: template-parts/navigation.php:49
+#: template-parts/navigation.php:12
+msgid "Main navigation"
+msgstr "Navegación Principal"
+
+#: template-parts/navigation.php:44
 msgctxt "toggle button"
-msgid "Display Menu"
+msgid "Display menu"
 msgstr "Mostrar menú"
 
-#: template-parts/navigation.php:50
+#: template-parts/navigation.php:56
 msgctxt "toggle button"
-msgid "Hide Menu"
-msgstr "Ocultar Menú"
-
-#: template-parts/navigation.php:67
-msgctxt "toggle button"
-msgid "Display Search Bar"
+msgid "Display search bar"
 msgstr "Mostrar barra de búsqueda"
 
-#: template-parts/navigation.php:68
-msgctxt "toggle button"
-msgid "Hide Search Bar"
-msgstr "Ocultar barra de búsqueda"
+#. Theme Name of the theme
+msgid "Fleximple Child Theme"
+msgstr ""
+
+#. Description of the theme
+msgid "A child theme based on the Fleximple Theme."
+msgstr "Una plantilla hija basada en Fleximple Theme."
+
+#~ msgid "Oops! That page can’t be found."
+#~ msgstr "¡Ups! No se ha podido encontrar esa página."
+
+#~ msgid ""
+#~ "It looks like nothing was found at this location. Maybe try one of the "
+#~ "links below or a search?"
+#~ msgstr ""
+#~ "Parece que no se ha encontrado nada aquí. ¿Por qué no pruebas con alguno "
+#~ "de los enlaces debajo o la barra de búsqueda?"
+
+#~ msgid "Footer Navigation"
+#~ msgstr "Navegación del pie"
+
+#~ msgctxt "toggle button"
+#~ msgid "Hide Submenu"
+#~ msgstr "Ocultar submenú"
+
+#~ msgid "Off-Canvas"
+#~ msgstr "Fuera del Lienzo"
+
+#~ msgid "The off-canvas sidebar."
+#~ msgstr "Barra lateral fuera del lienzo."
+
+#~ msgctxt "post author"
+#~ msgid "By "
+#~ msgstr "Por "
+
+#~ msgid "Leave a Comment<span class=\"screen-reader-only\"> on %s</span>"
+#~ msgstr "Deja un comentario<span class=\"screen-reader-only\"> en %s</span>"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 comentario"
+
+#~ msgid "Comments are Closed"
+#~ msgstr "Los comentarios están cerrados"
+
+#~ msgctxt "toggle button"
+#~ msgid "Hide Menu"
+#~ msgstr "Ocultar Menú"
+
+#~ msgctxt "toggle button"
+#~ msgid "Hide Search Bar"
+#~ msgstr "Ocultar barra de búsqueda"
 
 #~ msgctxt "toggle button"
 #~ msgid "Submenu Toggle"

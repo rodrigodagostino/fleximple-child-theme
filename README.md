@@ -17,3 +17,9 @@ The Fleximple Child Theme currently has support for the following languages:
 - English (en_US)
 - Spanish (es_ES)
 If you want to contribute with a different translation, you’re more than welcome to do so 😉.
+
+## Changelog
+### 1.0.0
+- First production-ready release
+### 0.5.0
+- Initial release

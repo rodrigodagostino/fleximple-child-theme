@@ -87,10 +87,32 @@ body.post-type-post {
 	// @import '../../../fleximple-theme/src/scss/templates/home';
 }
 
-@media only screen and (min-width: var(--bp-medium)) {
-	.edit-post-visual-editor .editor-styles-wrapper {
-		.editor-post-title__block .editor-post-title__input {
-			font-size: $single__entry-title__font-size--medium;
+@if ($single__entry-title__font-size--medium != null) {
+	@media only screen and (min-width: var(--bp-medium)) {
+		.edit-post-visual-editor .editor-styles-wrapper {
+			.editor-post-title__block .editor-post-title__input {
+				font-size: $single__entry-title__font-size--medium;
+			}
+		}
+	}
+}
+
+@if ($single__entry-title__font-size--large != null) {
+	@media only screen and (min-width: var(--bp-large)) {
+		.edit-post-visual-editor .editor-styles-wrapper {
+			.editor-post-title__block .editor-post-title__input {
+				font-size: $single__entry-title__font-size--large;
+			}
+		}
+	}
+}
+
+@if ($single__entry-title__font-size--xlarge != null) {
+	@media only screen and (min-width: var(--bp-xlarge)) {
+		.edit-post-visual-editor .editor-styles-wrapper {
+			.editor-post-title__block .editor-post-title__input {
+				font-size: $single__entry-title__font-size--xlarge;
+			}
 		}
 	}
 }

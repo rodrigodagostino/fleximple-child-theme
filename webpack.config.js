@@ -6,6 +6,7 @@ const postcssAtVariables = require( 'postcss-at-rules-variables' )
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' )
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' )
 const IgnoreEmitPlugin = require( 'ignore-emit-webpack-plugin' )
+const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' )
 
 const config = {
 	entry: {
@@ -122,6 +123,7 @@ const config = {
 			filename: '[name].css',
 		} ),
 		new IgnoreEmitPlugin( [ 'style.js' ] ),
+		new DependencyExtractionWebpackPlugin( { injectPolyfill: true } ),
 	],
 }
 

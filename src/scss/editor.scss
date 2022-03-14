@@ -51,6 +51,10 @@ body.post-type-post {
 	color: var(--text__color);
 	background-color: var(--body__background-color);
 
+	p {
+		line-height: inherit;
+	}
+
 	.editor-post-title__block .editor-post-title__input {
 		font-family: var(--heading__font-family);
 		font-size: $single__entry-title__font-size;

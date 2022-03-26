@@ -1,6 +1,6 @@
 {
 	"name": "fleximple-child-theme",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "The “Fleximple Child Theme” designed for WordPress",
 	"main": "dist/scripts.js",
 	"scripts": {

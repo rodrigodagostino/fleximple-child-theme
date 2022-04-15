@@ -31,12 +31,14 @@
 
 .login {
 	display: flex;
+  flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--gray-050);
 
 	#login {
 		padding: 0;
+    margin: 0;
 
 		h1 a {
 			background: url(../assets/images/logo-inline.svg);

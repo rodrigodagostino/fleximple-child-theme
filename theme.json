@@ -1,0 +1,108 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Bitter\", \"Helvetica Neue\", sans-serif",
+          "name": "Primary Font",
+          "slug": "bitter",
+          "fontFace": [
+            {
+              "fontFamily": "Bitter",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/bitter/bitter-v26-latin-400.woff",
+                "file:./assets/fonts/bitter/bitter-v26-latin-400.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Bitter",
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/bitter/bitter-v26-latin-400-italic.woff",
+                "file:./assets/fonts/bitter/bitter-v26-latin-400-italic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Bitter",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/bitter/bitter-v26-latin-700.woff",
+                "file:./assets/fonts/bitter/bitter-v26-latin-700.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Bitter",
+              "fontWeight": "700",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/bitter/bitter-v26-latin-700-italic.woff",
+                "file:./assets/fonts/bitter/bitter-v26-latin-700-italic.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "fontFamily": "\"Open Sans\", \"Helvetica Neue\", sans-serif",
+          "name": "Secondary Font",
+          "slug": "open-sans",
+          "fontFace": [
+            {
+              "fontFamily": "Open Sans",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400.woff",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400-italic.woff",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400-italic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700.woff",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Open Sans",
+              "fontWeight": "700",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700-italic.woff",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700-italic.woff2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "910px",
+      "wideSize": "1400px"
+    }
+  }
+}

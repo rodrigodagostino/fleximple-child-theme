@@ -1,32 +1,8 @@
 <?php
 /**
- * Register Google Fonts
- */
-function fleximplechildtheme_fonts_url() {
-	$font_families = array();
-	$font_families[] = 'Bitter:ital,wght@0,400;0,700;1,400;1,700';
-	$font_families[] = 'Catamaran:ital,wght@0,400;0,600;1,400;1,600';
-
-	$query_args = array(
-		'family' => implode( '&family=', $font_families ),
-		'display' => 'swap',
-	);
-
-	$fonts_url = esc_url( add_query_arg( $query_args, 'https://fonts.googleapis.com/css2' ) );
-	return $fonts_url;
-}
-
-/**
  * Enqueue admin scripts.
  */
 // function fleximplechildtheme_enqueue_admin_assets() {
-// 	wp_enqueue_style(
-// 		'theme-admin-fonts',
-// 		fleximplechildtheme_fonts_url(),
-// 		array(),
-// 		null
-// 	);
-
 // 	if ( file_exists( get_template_directory() . '/dist/admin-script.js' ) ) {
 // 		wp_enqueue_script(
 // 			'theme-admin-scripts',
@@ -56,16 +32,9 @@ function fleximplechildtheme_enqueue_customizer_assets() {
 add_action( 'customize_preview_init', 'fleximplechildtheme_enqueue_customizer_assets' );
 
 /**
- * Enqueue fonts, scripts and styles.
+ * Enqueue scripts and styles.
  */
 function fleximplechildtheme_enqueue_assets() {
-	wp_enqueue_style(
-		'theme-fonts',
-		fleximplechildtheme_fonts_url(),
-		array(),
-		null
-	);
-
 	wp_enqueue_style(
 		'theme-styles',
 		get_stylesheet_directory_uri() . '/dist/style.css',
@@ -88,16 +57,9 @@ function fleximplechildtheme_enqueue_assets() {
 add_action( 'wp_enqueue_scripts', 'fleximplechildtheme_enqueue_assets', 10 );
 
 /**
- * Enqueue editor fonts and styles.
+ * Enqueue editor styles.
  */
 function fleximplechildtheme_enqueue_editor_assets() {
-	wp_enqueue_style(
-		'theme-editor-fonts',
-		fleximplechildtheme_fonts_url(),
-		array(),
-		null
-	);
-
 	wp_enqueue_style(
 		'theme-editor-styles',
 		get_stylesheet_directory_uri() . '/dist/editor-style.css',
@@ -122,13 +84,6 @@ add_action( 'enqueue_block_editor_assets', 'fleximplechildtheme_enqueue_editor_a
  * Enqueue login styles.
  */
 function fleximplechildtheme_enqueue_login_styles() {
-	wp_enqueue_style(
-		'theme-login-fonts',
-		fleximplechildtheme_fonts_url(),
-		array(),
-		null
-	);
-
 	wp_enqueue_style(
 		'theme-login-styles',
 		get_stylesheet_directory_uri() . '/dist/login-style.css',

@@ -28,79 +28,85 @@
   }
 }
 
+body.post-type-post {
+  .edit-post-layout .editor-styles-wrapper .wp-block {
+    max-width: calc(var(--site-main__width) - 28% - var(--site-main__gap));
+  }
+}
+
 .edit-post-visual-editor .editor-styles-wrapper {
-	font-family: var(--body__font-family);
-	font-size: $single__entry-content__font-size;
-	line-height: var(--body__line-height);
-	color: var(--text__color);
-	background-color: var(--body__background-color);
+  font-family: var(--body__font-family);
+  font-size: $single__entry-content__font-size;
+  line-height: var(--body__line-height);
+  color: var(--text__color);
+  background-color: var(--body__background-color);
 
-	p {
-		line-height: inherit;
-	}
+  p {
+    line-height: inherit;
+  }
 
-	.editor-post-title__block .editor-post-title__input {
-		font-family: var(--heading__font-family);
-		font-size: $single__entry-title__font-size;
-		font-weight: $single__entry-title__font-weight;
-		color: $single__entry-title__color;
-		line-height: $single__entry-title__line-height;
-	}
+  .editor-post-title__block .editor-post-title__input {
+    font-family: var(--heading__font-family);
+    font-size: $single__entry-title__font-size;
+    font-weight: $single__entry-title__font-weight;
+    color: $single__entry-title__color;
+    line-height: $single__entry-title__line-height;
+  }
 
-	/* Base */
-	@import "../../../fleximple-theme/src/scss/base/typography";
-	@import "../../../fleximple-theme/src/scss/base/elements";
-	@import "../../../fleximple-theme/src/scss/base/alignment";
+  /* Base */
+  @import "../../../fleximple-theme/src/scss/base/typography";
+  @import "../../../fleximple-theme/src/scss/base/elements";
+  @import "../../../fleximple-theme/src/scss/base/alignment";
 
-	/* Layout */
-	@import "../../../fleximple-theme/src/scss/layout/navigation";
+  /* Layout */
+  @import "../../../fleximple-theme/src/scss/layout/navigation";
 
-	p.wp-block a,
-	ul.wp-block a,
-	blockquote.wp-block a {
-		border-bottom: 2px solid var(--gray-150);
+  p.wp-block a,
+  ul.wp-block a,
+  blockquote.wp-block a {
+    border-bottom: 2px solid var(--gray-150);
 
-		&:hover,
-		&:active {
-			border-bottom-color: $link__color--hover;
-		}
-	}
+    &:hover,
+    &:active {
+      border-bottom-color: $link__color--hover;
+    }
+  }
 
-	/* Components */
-	@import "../../../fleximple-theme/src/scss/components/media";
-	@import "../../../fleximple-theme/src/scss/components/media";
-	@import "../../../fleximple-theme/src/scss/components/widgets";
+  /* Components */
+  @import "../../../fleximple-theme/src/scss/components/media";
+  @import "../../../fleximple-theme/src/scss/components/media";
+  @import "../../../fleximple-theme/src/scss/components/widgets";
 
-	/* Templates */
-	// @import '../../../fleximple-theme/src/scss/templates/home';
+  /* Templates */
+  // @import '../../../fleximple-theme/src/scss/templates/home';
 }
 
 @if ($single__entry-title__font-size--medium != null) {
-	@media only screen and (min-width: var(--bp-medium)) {
-		.edit-post-visual-editor .editor-styles-wrapper {
-			.editor-post-title__block .editor-post-title__input {
-				font-size: $single__entry-title__font-size--medium;
-			}
-		}
-	}
+  @media only screen and (min-width: var(--bp-medium)) {
+    .edit-post-visual-editor .editor-styles-wrapper {
+      .editor-post-title__block .editor-post-title__input {
+        font-size: $single__entry-title__font-size--medium;
+      }
+    }
+  }
 }
 
 @if ($single__entry-title__font-size--large != null) {
-	@media only screen and (min-width: var(--bp-large)) {
-		.edit-post-visual-editor .editor-styles-wrapper {
-			.editor-post-title__block .editor-post-title__input {
-				font-size: $single__entry-title__font-size--large;
-			}
-		}
-	}
+  @media only screen and (min-width: var(--bp-large)) {
+    .edit-post-visual-editor .editor-styles-wrapper {
+      .editor-post-title__block .editor-post-title__input {
+        font-size: $single__entry-title__font-size--large;
+      }
+    }
+  }
 }
 
 @if ($single__entry-title__font-size--xlarge != null) {
-	@media only screen and (min-width: var(--bp-xlarge)) {
-		.edit-post-visual-editor .editor-styles-wrapper {
-			.editor-post-title__block .editor-post-title__input {
-				font-size: $single__entry-title__font-size--xlarge;
-			}
-		}
-	}
+  @media only screen and (min-width: var(--bp-xlarge)) {
+    .edit-post-visual-editor .editor-styles-wrapper {
+      .editor-post-title__block .editor-post-title__input {
+        font-size: $single__entry-title__font-size--xlarge;
+      }
+    }
+  }
 }

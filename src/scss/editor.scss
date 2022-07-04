@@ -19,6 +19,9 @@
 
 .edit-post-layout {
   .editor-styles-wrapper {
+    padding-left: var(--space-125);
+    padding-right: var(--space-125);
+
     .edit-post-visual-editor__post-title-wrapper
       > :where(:not(.alignleft):not(.alignright)),
     .block-editor-block-list__layout.is-root-container

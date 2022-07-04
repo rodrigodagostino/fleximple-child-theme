@@ -13,6 +13,7 @@
               "fontFamily": "Bitter",
               "fontWeight": "400",
               "fontStyle": "normal",
+              "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
                 "file:./assets/fonts/bitter/bitter-v26-latin-400.woff",
@@ -23,6 +24,7 @@
               "fontFamily": "Bitter",
               "fontWeight": "400",
               "fontStyle": "italic",
+              "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
                 "file:./assets/fonts/bitter/bitter-v26-latin-400-italic.woff",
@@ -33,6 +35,7 @@
               "fontFamily": "Bitter",
               "fontWeight": "700",
               "fontStyle": "normal",
+              "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
                 "file:./assets/fonts/bitter/bitter-v26-latin-700.woff",
@@ -43,6 +46,7 @@
               "fontFamily": "Bitter",
               "fontWeight": "700",
               "fontStyle": "italic",
+              "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
                 "file:./assets/fonts/bitter/bitter-v26-latin-700-italic.woff",
@@ -60,6 +64,7 @@
               "fontFamily": "Open Sans",
               "fontWeight": "400",
               "fontStyle": "normal",
+              "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
                 "file:./assets/fonts/open-sans/open-sans-v29-latin-400.woff",
@@ -70,6 +75,7 @@
               "fontFamily": "Open Sans",
               "fontWeight": "400",
               "fontStyle": "italic",
+              "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
                 "file:./assets/fonts/open-sans/open-sans-v29-latin-400-italic.woff",
@@ -80,6 +86,7 @@
               "fontFamily": "Open Sans",
               "fontWeight": "700",
               "fontStyle": "normal",
+              "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
                 "file:./assets/fonts/open-sans/open-sans-v29-latin-700.woff",
@@ -90,6 +97,7 @@
               "fontFamily": "Open Sans",
               "fontWeight": "700",
               "fontStyle": "italic",
+              "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
                 "file:./assets/fonts/open-sans/open-sans-v29-latin-700-italic.woff",

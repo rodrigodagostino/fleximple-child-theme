@@ -16,8 +16,11 @@
               "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
-                "file:./assets/fonts/bitter/bitter-v26-latin-400.woff",
-                "file:./assets/fonts/bitter/bitter-v26-latin-400.woff2"
+                "file:./assets/fonts/bitter/bitter-v28-latin-400.eot",
+                "file:./assets/fonts/bitter/bitter-v28-latin-400.woff2",
+                "file:./assets/fonts/bitter/bitter-v28-latin-400.woff",
+                "file:./assets/fonts/bitter/bitter-v28-latin-400.ttf",
+                "file:./assets/fonts/bitter/bitter-v28-latin-400.svg#Bitter"
               ]
             },
             {
@@ -27,8 +30,11 @@
               "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
-                "file:./assets/fonts/bitter/bitter-v26-latin-400-italic.woff",
-                "file:./assets/fonts/bitter/bitter-v26-latin-400-italic.woff2"
+                "file:./assets/fonts/bitter/bitter-v28-latin-400-italic.eot",
+                "file:./assets/fonts/bitter/bitter-v28-latin-400-italic.woff2",
+                "file:./assets/fonts/bitter/bitter-v28-latin-400-italic.woff",
+                "file:./assets/fonts/bitter/bitter-v28-latin-400-italic.ttf",
+                "file:./assets/fonts/bitter/bitter-v28-latin-400-italic.svg#Bitter"
               ]
             },
             {
@@ -38,8 +44,11 @@
               "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
-                "file:./assets/fonts/bitter/bitter-v26-latin-700.woff",
-                "file:./assets/fonts/bitter/bitter-v26-latin-700.woff2"
+                "file:./assets/fonts/bitter/bitter-v28-latin-700.eot",
+                "file:./assets/fonts/bitter/bitter-v28-latin-700.woff2",
+                "file:./assets/fonts/bitter/bitter-v28-latin-700.woff",
+                "file:./assets/fonts/bitter/bitter-v28-latin-700.ttf",
+                "file:./assets/fonts/bitter/bitter-v28-latin-700.svg#Bitter"
               ]
             },
             {
@@ -49,8 +58,11 @@
               "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
-                "file:./assets/fonts/bitter/bitter-v26-latin-700-italic.woff",
-                "file:./assets/fonts/bitter/bitter-v26-latin-700-italic.woff2"
+                "file:./assets/fonts/bitter/bitter-v28-latin-700-italic.eot",
+                "file:./assets/fonts/bitter/bitter-v28-latin-700-italic.woff2",
+                "file:./assets/fonts/bitter/bitter-v28-latin-700-italic.woff",
+                "file:./assets/fonts/bitter/bitter-v28-latin-700-italic.ttf",
+                "file:./assets/fonts/bitter/bitter-v28-latin-700-italic.svg#Bitter"
               ]
             }
           ]
@@ -67,8 +79,11 @@
               "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400.eot",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400.woff2",
                 "file:./assets/fonts/open-sans/open-sans-v29-latin-400.woff",
-                "file:./assets/fonts/open-sans/open-sans-v29-latin-400.woff2"
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400.ttf",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400.svg#OpenSans"
               ]
             },
             {
@@ -78,8 +93,11 @@
               "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400-italic.eot",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400-italic.woff2",
                 "file:./assets/fonts/open-sans/open-sans-v29-latin-400-italic.woff",
-                "file:./assets/fonts/open-sans/open-sans-v29-latin-400-italic.woff2"
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400-italic.ttf",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-400-italic.svg#OpenSans"
               ]
             },
             {
@@ -89,8 +107,11 @@
               "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700.eot",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700.woff2",
                 "file:./assets/fonts/open-sans/open-sans-v29-latin-700.woff",
-                "file:./assets/fonts/open-sans/open-sans-v29-latin-700.woff2"
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700.ttf",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700.svg#OpenSans"
               ]
             },
             {
@@ -100,8 +121,11 @@
               "fontDisplay": "swap",
               "fontStretch": "normal",
               "src": [
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700-italic.eot",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700-italic.woff2",
                 "file:./assets/fonts/open-sans/open-sans-v29-latin-700-italic.woff",
-                "file:./assets/fonts/open-sans/open-sans-v29-latin-700-italic.woff2"
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700-italic.ttf",
+                "file:./assets/fonts/open-sans/open-sans-v29-latin-700-italic.svg#OpenSans"
               ]
             }
           ]

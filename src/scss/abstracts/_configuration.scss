@@ -7,75 +7,75 @@
 
  ----------------------------------------------*/
 
- :root {
-	/*----------------------
+:root {
+  /*----------------------
 	 # BREAKPOINTS
 	 ---------------------*/
-	--bp-small: rem(380px);
-	--bp-medium: rem(600px);
-	--bp-large: rem(910px);
-	--bp-xlarge: rem(1280px);
-	--bp-xxlarge: rem(1440px);
+  --bp-small: rem(380px);
+  --bp-medium: rem(600px);
+  --bp-large: rem(910px);
+  --bp-xlarge: rem(1280px);
+  --bp-xxlarge: rem(1440px);
 
-	/*----------------------
+  /*----------------------
 	 # BASE
 	 ---------------------*/
-	--body__font-family: var(--font-secondary);
-	--body__font-size: var(--text-100);
-	--body__line-height: 1.6;
-	--body__background-color: var(--white);
-	--text__color: var(--gray-600);
-	--text__color--light: var(--gray-400);
-	--text__color--dark: var(--gray-800);
-	--text__color--subtle: var(--gray-400);
-	--text__color--inverse: var(--white-rich);
+  --body__font-family: var(--font-secondary);
+  --body__font-size: var(--text-100);
+  --body__line-height: 1.6;
+  --body__background-color: var(--white);
+  --text__color: var(--gray-600);
+  --text__color--light: var(--gray-400);
+  --text__color--dark: var(--gray-800);
+  --text__color--subtle: var(--gray-400);
+  --text__color--inverse: var(--white-rich);
 
-	/*----------------------
+  /*----------------------
 	 # TYPOGRAPHY
 	 ---------------------*/
-	/* Headings */
-	--heading__font-family: var(--font-primary);
-	--heading__font-weight: bold;
-	--heading__line-height: 1.2;
-	--heading__color: var(--gray-800);
-	--heading__letter-spacing: 0;
-	--heading-1__font-size: var(--text-200);
-	--heading-2__font-size: var(--text-175);
-	--heading-3__font-size: var(--text-150);
-	--heading-4__font-size: var(--text-125);
-	--heading-5__font-size: var(--text-075);
-	--heading-6__font-size: var(--text-050);
-	--heading-link__color: var(--gray-800);
-	--heading-link__color--visited: var(--gray-800);
-	--heading-link__color--focus: var(--color-primary);
-	--heading-link__color--hover: var(--color-primary);
-	--heading-link__color--active: var(--color-primary);
+  /* Headings */
+  --heading__font-family: var(--font-primary);
+  --heading__font-weight: bold;
+  --heading__line-height: 1.2;
+  --heading__color: var(--gray-800);
+  --heading__letter-spacing: 0;
+  --heading-1__font-size: var(--text-200);
+  --heading-2__font-size: var(--text-175);
+  --heading-3__font-size: var(--text-150);
+  --heading-4__font-size: var(--text-125);
+  --heading-5__font-size: var(--text-075);
+  --heading-6__font-size: var(--text-050);
+  --heading-link__color: var(--gray-800);
+  --heading-link__color--visited: var(--gray-800);
+  --heading-link__color--focus: var(--color-primary);
+  --heading-link__color--hover: var(--color-primary);
+  --heading-link__color--active: var(--color-primary);
 
-	/* Text Selection */
-	--text-selection__color: var(--white);
-	--text-selection__background-color: var(--color-accent--light);
+  /* Text Selection */
+  --text-selection__color: var(--white);
+  --text-selection__background-color: var(--color-accent--light);
 
-	/*----------------------
+  /*----------------------
 	 # LAYOUT
 	 ---------------------*/
-	/* Container */
-	--container__max-width--small: var(--site-main__width);
-	--container__max-width--medium: var(--site-main__width);
-	--container__max-width--large: var(--site-main__width);
-	--container__max-width--xlarge: var(--site-main__width);
+  /* Container */
+  --container__max-width--small: var(--site-main__width);
+  --container__max-width--medium: var(--site-main__width);
+  --container__max-width--large: var(--site-main__width);
+  --container__max-width--xlarge: var(--site-main__width);
 
-	/* Site Main */
-	--site-main__width: var(--bp-large);
-	--site-main__background-color: transparent;
-	--site-main__gap: var(--space-150);
-	--site-main__padding: var(--space-100);
-	--site-main__padding--small: var(--space-100);
-	--site-main__padding--medium: var(--space-150);
-	--site-main__padding--large: var(--space-150);
-	--site-main__margin: var(--space-050) 0 var(--space-100);
-	--site-main__margin--small: var(--space-050) 0 var(--space-100);
-	--site-main__margin--medium: var(--space-100) 0 calc(var(--space-150) * 2);
-	--site-main__margin--large: var(--space-100) 0 calc(var(--space-150) * 2);
+  /* Site Main */
+  --site-main__width: var(--bp-large);
+  --site-main__background-color: transparent;
+  --site-main__gap: var(--space-150);
+  --site-main__padding: var(--space-100);
+  --site-main__padding--small: var(--space-100);
+  --site-main__padding--medium: var(--space-150);
+  --site-main__padding--large: var(--space-150);
+  --site-main__margin: var(--space-050) 0 var(--space-100);
+  --site-main__margin--small: var(--space-050) 0 var(--space-100);
+  --site-main__margin--medium: var(--space-100) 0 calc(var(--space-150) * 2);
+  --site-main__margin--large: var(--space-100) 0 calc(var(--space-150) * 2);
 }
 
 /*----------------------
@@ -120,6 +120,10 @@ $site-main__secondary-content__margin: 0;
 $site-main__secondary-content__margin--small: null;
 $site-main__secondary-content__margin--medium: null;
 $site-main__secondary-content__margin--large: null;
+$site-main__secondary-content__widget-gap: var(--space-125);
+$site-main__secondary-content__widget-gap--small: null;
+$site-main__secondary-content__widget-gap--medium: null;
+$site-main__secondary-content__widget-gap--large: null;
 
 /* Site Footer */
 $site-footer__background-color: var(--gray-900);
@@ -282,9 +286,13 @@ $main-menu-item__link__color--hover--site: var(--gray-800);
 $main-menu-item__link__color--collapsible: var(--text__color--subtle);
 $main-menu-item__link__color--hover--collapsible: var(--gray-800);
 $main-menu-item__link__background-color--site: transparent;
-$main-menu-item__link__background-color--hover--site: color-mod(var(--gray-500) a(10%));
+$main-menu-item__link__background-color--hover--site: color-mod(
+  var(--gray-500) a(10%)
+);
 $main-menu-item__link__background-color--collapsible: transparent;
-$main-menu-item__link__background-color--hover--collapsible: color-mod(var(--gray-500) a(10%));
+$main-menu-item__link__background-color--hover--collapsible: color-mod(
+  var(--gray-500) a(10%)
+);
 $main-menu-item__link__text-transform: uppercase;
 $main-menu-item__link__padding--site: 0 var(--space-100);
 $main-menu-item__link__padding--collapsible: 0 var(--space-100);
@@ -295,7 +303,9 @@ $main-menu-item__link--highlighted__color--focus: var(--white-rich);
 $main-menu-item__link--highlighted__color--hover: var(--white-rich);
 $main-menu-item__link--highlighted__color--active: var(--white-rich);
 $main-menu-item__link--highlighted__background-color: var(--color-primary);
-$main-menu-item__link--highlighted__background-color--hover: var(--color-primary--light);
+$main-menu-item__link--highlighted__background-color--hover: var(
+  --color-primary--light
+);
 $main-menu-item__link--mirrored__text-align: right;
 
 /* Top Menu */
@@ -316,7 +326,9 @@ $top-menu-item__link__color--hover--collapsible: var(--gray-800);
 $top-menu-item__link__background-color--site: transparent;
 $top-menu-item__link__background-color--hover--site: var(--color-primary--dark);
 $top-menu-item__link__background-color--collapsible: transparent;
-$top-menu-item__link__background-color--hover--collapsible: var(--color-primary--dark);
+$top-menu-item__link__background-color--hover--collapsible: var(
+  --color-primary--dark
+);
 $top-menu-item__link__text-transform: none;
 $top-menu-item__link__padding--site: 0 var(--space-100);
 $top-menu-item__link__padding--collapsible: 0 var(--space-100);
@@ -330,8 +342,10 @@ $menu-toggle__background-color--hover: var(--gray-100);
 $menu-toggle__background-color--active: var(--color-accent);
 $menu-toggle__border-radius: var(--space-025);
 $menu-toggle__box-shadow: none;
-$menu-toggle__box-shadow--focus: 0 0 0 0.25rem color-mod(var(--color-primary--darker) a(25%));
-$menu-toggle__box-shadow--active: 0 0 0 0.25rem color-mod(var(--color-accent) a(25%));
+$menu-toggle__box-shadow--focus: 0 0 0 0.25rem
+  color-mod(var(--color-primary--darker) a(25%));
+$menu-toggle__box-shadow--active: 0 0 0 0.25rem
+  color-mod(var(--color-accent) a(25%));
 $menu-toggle__is-hidden: var(--bp-xlarge);
 $menu-toggle__line__background-color: var(--gray-800);
 $menu-toggle__line__background-color--focus: var(--gray-800);
@@ -401,8 +415,10 @@ $search-bar-form__input__border-left--collapsible: null;
 $search-bar-form__input__border-left--focus--collapsible: null;
 $search-bar-form__input__placeholder-color--site: var(--gray-400);
 $search-bar-form__input__placeholder-color--collapsible: var(--gray-400);
-$search-bar-form__input__padding--site: var(--space-075) var(--space-300) var(--space-075) var(--space-125);
-$search-bar-form__input__padding--collapsible: var(--space-100) var(--space-300) var(--space-100) var(--space-125);
+$search-bar-form__input__padding--site: var(--space-075) var(--space-300)
+  var(--space-075) var(--space-125);
+$search-bar-form__input__padding--collapsible: var(--space-100) var(--space-300)
+  var(--space-100) var(--space-125);
 $search-bar-form__input__margin--site: 0;
 $search-bar-form__input__margin--collapsible: 0;
 $search-bar-form__button__color--site: var(--gray-600);
@@ -420,9 +436,13 @@ $search-bar-form__button__background-color--focus--collapsible: var(--gray-650);
 $search-bar-form__button__background-color--hover--site: var(--gray-650);
 $search-bar-form__button__background-color--hover--collapsible: var(--gray-650);
 $search-bar-form__button__background-color--active--site: var(--color-primary);
-$search-bar-form__button__background-color--active--collapsible: var(--color-primary);
-$search-bar-form__button__border-radius--site: 0 var(--space-025) var(--space-025) 0;
-$search-bar-form__button__border-radius--collapsible: 0 var(--space-025) var(--space-025) 0;
+$search-bar-form__button__background-color--active--collapsible: var(
+  --color-primary
+);
+$search-bar-form__button__border-radius--site: 0 var(--space-025)
+  var(--space-025) 0;
+$search-bar-form__button__border-radius--collapsible: 0 var(--space-025)
+  var(--space-025) 0;
 $search-bar-form__button__padding--site: 0 var(--space-125);
 $search-bar-form__button__padding--collapsible: 0 var(--space-100);
 $search-bar-form__button__margin--site: 0;
@@ -448,9 +468,12 @@ $search-toggle__border-radius--focus: var(--space-025);
 $search-toggle__border-radius--hover: var(--space-025);
 $search-toggle__border-radius--active: var(--space-025);
 $search-toggle__box-shadow: none;
-$search-toggle__box-shadow--focus: 0 0 0 0.25rem color-mod(var(--color-primary--darker) a(25%));
-$search-toggle__box-shadow--hover: 0 0 0 0.25rem color-mod(var(--color-primary--darker) a(25%));
-$search-toggle__box-shadow--active: 0 0 0 0.25rem color-mod(var(--color-primary) a(25%));
+$search-toggle__box-shadow--focus: 0 0 0 0.25rem
+  color-mod(var(--color-primary--darker) a(25%));
+$search-toggle__box-shadow--hover: 0 0 0 0.25rem
+  color-mod(var(--color-primary--darker) a(25%));
+$search-toggle__box-shadow--active: 0 0 0 0.25rem
+  color-mod(var(--color-primary) a(25%));
 $search-toggle__outline: none;
 $search-toggle__icon__color: var(--text__color--subtle);
 $search-toggle__icon__color--focus: var(--gray-800);
@@ -478,7 +501,9 @@ $footer-menu-item-link__color--focus: var(--gray-200);
 $footer-menu-item-link__color--hover: var(--gray-200);
 $footer-menu-item-link__color--active: var(--gray-200);
 $footer-menu-item-link__background-color: transparent;
-$footer-menu-item-link__background-color--hover: color-mod(var(--gray-500) a(10%));
+$footer-menu-item-link__background-color--hover: color-mod(
+  var(--gray-500) a(10%)
+);
 $footer-menu-item-link__line-height: inherit;
 $footer-menu-item-link__line-height--small: null;
 $footer-menu-item-link__line-height--medium: null;
@@ -546,7 +571,8 @@ $checkbox-radio__background-color--checked: var(--color-primary);
 $checkbox-radio__border: 1px solid var(--gray-400);
 $checkbox-radio__border--checked: 1px solid var(--color-primary);
 $checkbox-radio__box-shadow: none;
-$checkbox-radio__box-shadow--focus: 0 0 0 0.25rem color-mod(var(--color-primary) a(25%));
+$checkbox-radio__box-shadow--focus: 0 0 0 0.25rem
+  color-mod(var(--color-primary) a(25%));
 $text-area__padding: var(--space-100);
 $tooltip__font-size: rem(14px);
 $tooltip__color: var(--gray-100);
@@ -558,7 +584,8 @@ $backdrop__background-color: color-mod(var(--white) a(72%));
 $search-form__padding: 0;
 $search-form__margin: var(--space-125) 0 0;
 $search-form__input__font-size: var(--text-125);
-$search-form__input__padding: var(--space-050) var(--space-300) var(--space-050) var(--space-075);
+$search-form__input__padding: var(--space-050) var(--space-300) var(--space-050)
+  var(--space-075);
 $search-form__input__margin: 0;
 $search-form__button__color: var(--gray-650);
 $search-form__button__color--focus: var(--white);

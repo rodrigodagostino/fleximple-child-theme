@@ -9,8 +9,8 @@
 
 :root {
   /*----------------------
-	 # BREAKPOINTS
-	 ---------------------*/
+   # BREAKPOINTS
+   ---------------------*/
   --bp-small: rem(380px);
   --bp-medium: rem(600px);
   --bp-large: rem(910px);
@@ -18,8 +18,8 @@
   --bp-xxlarge: rem(1440px);
 
   /*----------------------
-	 # BASE
-	 ---------------------*/
+   # BASE
+   ---------------------*/
   --body__font-family: var(--font-secondary);
   --body__font-size: var(--text-100);
   --body__font-weight: 400;
@@ -32,8 +32,8 @@
   --text__color--inverse: var(--white-rich);
 
   /*----------------------
-	 # TYPOGRAPHY
-	 ---------------------*/
+   # TYPOGRAPHY
+   ---------------------*/
   /* Headings */
   --heading__font-family: var(--font-primary);
   --heading__font-weight: bold;
@@ -57,8 +57,8 @@
   --text-selection__background-color: var(--color-accent--light);
 
   /*----------------------
-	 # LAYOUT
-	 ---------------------*/
+   # LAYOUT
+   ---------------------*/
   /* Container */
   --container__max-width--small: var(--site-main__width);
   --container__max-width--medium: var(--site-main__width);

@@ -5,25 +5,25 @@
  ----------------------------------------------*/
 
 :root {
-	/* Font families */
-	--font-primary: "Bitter", var(--font-serif-fallback);
-	--font-secondary: "Open Sans", var(--font-sans-serif-fallback);
-	--font-sans-serif-fallback: "Helvetica Neue", sans-serif;
-	--font-serif-fallback: "Georgia", serif;
-	--font-icon: "FontAwesome", var(--font-fallback);
+  /* Font families */
+  --font-primary: "Bitter", var(--font-serif-fallback);
+  --font-secondary: "Open Sans", var(--font-sans-serif-fallback);
+  --font-sans-serif-fallback: "Helvetica Neue", sans-serif;
+  --font-serif-fallback: "Georgia", serif;
+  --font-icon: "FontAwesome", var(--font-fallback);
 
-	/* Set base values */
-	--text-base: rem(16px);
+  /* Set base values */
+  --text-base: rem(16px);
 
-	/* Type scale */
-	--text-050: calc(var(--text-base) * 0.5);
-	--text-075: calc(var(--text-base) * 0.75);
-	--text-100: var(--text-base);
-	--text-125: calc(var(--text-base) * 1.25);
-	--text-150: calc(var(--text-base) * 1.5);
-	--text-175: calc(var(--text-base) * 1.75);
-	--text-200: calc(var(--text-base) * 2);
-	--text-250: calc(var(--text-base) * 2.5);
-	--text-300: calc(var(--text-base) * 3);
-	--text-400: calc(var(--text-base) * 4);
+  /* Type scale */
+  --text-050: calc(var(--text-base) * 0.5);
+  --text-075: calc(var(--text-base) * 0.75);
+  --text-100: var(--text-base);
+  --text-125: calc(var(--text-base) * 1.25);
+  --text-150: calc(var(--text-base) * 1.5);
+  --text-175: calc(var(--text-base) * 1.75);
+  --text-200: calc(var(--text-base) * 2);
+  --text-250: calc(var(--text-base) * 2.5);
+  --text-300: calc(var(--text-base) * 3);
+  --text-400: calc(var(--text-base) * 4);
 }

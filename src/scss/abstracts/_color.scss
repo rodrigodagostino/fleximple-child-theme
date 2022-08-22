@@ -13,6 +13,8 @@
   --color-primary--dark: color-mod(var(--color-primary) shade(15%));
   --color-primary--darker: color-mod(var(--color-primary) shade(30%));
   --color-primary--darkest: color-mod(var(--color-primary) shade(45%));
+  --color-primary--alpha-50: color-mod(var(--color-primary) a(50%));
+  --color-primary--dark--alpha-50: color-mod(var(--color-primary--dark) a(50%));
 
   /* Accent colors */
   --color-accent: #f4495d;
@@ -22,6 +24,8 @@
   --color-accent--dark: color-mod(var(--color-accent) shade(15%));
   --color-accent--darker: color-mod(var(--color-accent) shade(30%));
   --color-accent--darkest: color-mod(var(--color-accent) shade(45%));
+  --color-accent--alpha-50: color-mod(var(--color-accent) a(50%));
+  --color-accent--dark--alpha-50: color-mod(var(--color-accent--dark) a(50%));
 
   /* Feedback */
   --color-success: var(--accent-green);
